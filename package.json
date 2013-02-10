@@ -1,0 +1,35 @@
+{
+  "name": "signed-distance",
+  "version": "0.0.0",
+  "description": "Signed distance field computations",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "numeric": "~1.2.6"
+  },
+  "devDependencies": {
+    "conway-hart": "~0.0.0",
+    "normals": "~0.0.0",
+    "spatial-grid": "~0.0.3"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/signed-distance.git"
+  },
+  "keywords": [
+    "signed",
+    "distance",
+    "field",
+    "mesh",
+    "3d"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "6f49548fe48f9e5ec80a840da3c3fc5d617d52ec"
+}
