@@ -1,7 +1,7 @@
 var numeric = require("numeric");
 var EPSILON = 1e-6;
 
-module.exports = function(grid, faceNormals, x) {
+function signedDistance(grid, faceNormals, x) {
   var result = grid.closestCells(x);
   if(!result) {
     return Number.NaN;
@@ -38,3 +38,5 @@ module.exports = function(grid, faceNormals, x) {
   var r = Math.sqrt(result.distance);
   return polarity ? r : -r;
 }
+module.exports = signedDistance;
+
