@@ -1,6 +1,6 @@
 {
   "name": "signed-distance",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Signed distance field computations",
   "main": "index.js",
   "directories": {
