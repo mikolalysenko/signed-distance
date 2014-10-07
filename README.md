@@ -10,11 +10,13 @@ Via npm:
 
 Here is how you can use it:
 
+```js
     var mesh = require("bunny");
     var dist = require("signed-distance")(
-                  require("spatial-grid")(grid, 0.1), 
-                  require("normals").faceNormals(mesh.positions, mesh.faces),
+                  require("spatial-grid")(mesh.cells, mesh.positions, 0.1), 
+                  require("normals").faceNormals(mesh.cells, mesh.positions),
                   [1.0, 0.0, 0.0]);
+```                  
 
 `require("signed-distance")(grid, faceNormals, point)`
 ------------------------------------------------------
